@@ -1,74 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Club Matching Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clubquiz.css">
+    <script src="clubs.js"></script>
+</head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Club Matching Quiz</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="quiz.css">
-        <script src="clubs.js"></script>
-    </head>
-    <!-- Back button to return to the main page -->
-    <button onclick="window.location.href='index.html';">← Back to Home</button>
-    <!-- Main content of the Quiz page -->
-    <main>
-        <h1>Quiz Page</h1>
+    <div id="navbar">
+        <a id="logo" style="color: #FAF9F6; font-size: 35px;">ClubHub</a>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="clubquiz.html">Quiz!</a>
+            <a href="clubspage.html">Clubs</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </div>
+    <main style="margin-top: 10%;">
+        <h1 style="text-align: center; color:#122D42">Quiz Page</h1>
         <section>
-            <h2>Test Your Knowledge!</h2>
-            <p>Answer the following questions:</p>
-            <form id="clubForm" onsubmit="return handleSubmit(event)">
+            <h2 style="text-align: center; color:#122D42">Test Your Knowledge!</h2>
+            <p style="margin-left: 5%;">Answer the following questions:</p>
+            <form style="margin-left: 5%;" id="clubForm" onsubmit="return handleSubmit(event)">
                 <label for="social">Social (1-10):</label>
-                <input type="number" id="social" name="social" min="1" max="10" required><br>
-
+                <input type="number" id="social" name="social" min="1" max="10" required>
                 <label for="timeCommitment">Time Commitment (1-10):</label>
-                <input type="number" id="timeCommitment" name="timeCommitment" min="1" max="10" required><br>
-
+                <input type="number" id="timeCommitment" name="timeCommitment" min="1" max="10" required>
                 <label for="major">Major:</label>
                 <select id="major" name="major" required>
                     <option value="Any">Any</option>
                     <option value="Computer Science">Computer Science</option>
                     <option value="Computer Engineering">Information Technology</option>
-=                </select><br>
-
+                </select>
                 <label for="meetingFrequency">Meeting Frequency:</label>
                 <select id="meetingFrequency" name="meetingFrequency" required>
                     <option value="Weekly">Weekly</option>
                     <option value="Bi-weekly">Bi-weekly</option>
                     <option value="Officer Discretion">Officer Discretion</option>
-                </select><br>
-
+                </select>
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
                     <option value="All">All</option>
                     <option value="Women">Women</option>
                     <option value="Men">Men</option>
-                </select><br>
-
+                </select>
                 <label for="ethnicity">Ethnicity:</label>
                 <select id="ethnicity" name="ethnicity" required>
                     <option value="All">All</option>
                     <option value="Black/African American">Black/African American</option>
                     <option value="Asian">Asian</option>
                     <option value="Hispanic">Hispanic</option>
-                </select><br>
-
+                </select>
                 <label for="focus">Focus:</label>
                 <select id="focus" name="focus" required>
                     <option value="Educational">Educational</option>
                     <option value="Pre-Professional">Pre-Professional</option>
                     <option value="Social">Social</option>
                     <option value="Student Affirmative Actions Committee (SAAC)">Student Affirmative Actions Committee (SAAC)</option>
-                </select><br>
-
+                </select>
                 <input type="submit" value="Find Club">
             </form>
             <div id="result"></div>
         </section>
     </main>
     <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                navbar.classList.add("shrink");
+            } else {
+                navbar.classList.remove("shrink");
+            }
+        }
+
         function handleSubmit(event) {
             event.preventDefault();
             const form = event.target;
@@ -94,3 +106,4 @@
         }
     </script>
 </body>
+</html>
