@@ -1,20 +1,29 @@
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Club Matching Quiz</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="quiz.css">
-    </head>
-    <!-- Back button to return to the main page -->
-    <button onclick="window.location.href='index.html';">← Back to Home</button>
-    <!-- Main content of the Quiz page -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quiz Page">
+    <title>ClubHub Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <a id="logo">ClubHub</a>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="quiz.html">Quiz!</a>
+            <a href="clubspage.html">Clubs</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </div>
+
     <main>
-        <h1>Quiz Page</h1>
+        <h1 style="margin-top: 10%;">Quiz Page</h1>
         <section>
             <h2>Test Your Knowledge!</h2>
             <p>Answer the following questions:</p>
@@ -30,7 +39,7 @@
                     <input type="range" min="1" max="5" value="3" class="slider" id="slider2">
                     <p>Value: <span id="value2"></span></p>
                 </div>
-                <label for="question2">3. How much of a time commitment are you willing to put into the club?</label><br>
+                <label for="question3">3. How much of a time commitment are you willing to put into the club?</label><br>
                 <div class="slidecontainer">
                     <input type="range" min="1" max="5" value="3" class="slider" id="slider3">
                     <p>Value: <span id="value3"></span></p>
@@ -39,5 +48,8 @@
             </form>
         </section>
     </main>
-    <script src="./quiz.js"></script>
+    
+    <script src="quiz.js"></script>
 </body>
+
+</html>
