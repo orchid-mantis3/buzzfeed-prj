@@ -1,0 +1,74 @@
+{
+    "clubs": [
+      {
+        "name": "UCSD ACM - Association for Computing Machinery",
+        "social": 6,
+        "major": ["Computer Science", "Computer Engineering"],
+        "timeCommitment": 3,
+        "gender": "All",
+        "ethnicity": "All",
+        "meetingFrequency": "Weekly",
+        "focus": "Educational"
+      },
+      {
+        "name": "UCSD WIC - Women in Computing",
+        "social": 6,
+        "major": ["Computer Science", "Computer Engineering"],
+        "timeCommitment": 3,
+        "gender": "Women",
+        "ethnicity": "All",
+        "meetingFrequency": "Weekly",
+        "focus": "Pre-Professional"
+      },
+      {
+        "name": "ASL Club",
+        "social": 7,
+        "major": "Any",
+        "timeCommitment": 1,
+        "gender": "All",
+        "ethnicity": "All",
+        "meetingFrequency": "Weekly",
+        "focus": "Social"
+      },
+      {
+        "name": "Chess Club",
+        "social": 6,
+        "major": "Any",
+        "timeCommitment": 2,
+        "gender": "All",
+        "ethnicity": "All",
+        "meetingFrequency": "Weekly",
+        "focus": "Social"
+      },
+      {
+        "name": "Paranormal Society",
+        "social": 7,
+        "major": "Any",
+        "timeCommitment": 7,
+        "gender": "All",
+        "ethnicity": "All",
+        "meetingFrequency": "Officer Discretion",
+        "focus": "Educational"
+      },
+      {
+        "name": "Strides Running Club",
+        "social": 9,
+        "major": "Any",
+        "timeCommitment": 7,
+        "gender": "All",
+        "ethnicity": "All",
+        "meetingFrequency": "Weekly",
+        "focus": "Social"
+      },
+      {
+        "name": "Asian and Pacific Islander Student Alliance (APSA)",
+        "social": 8,
+        "major": "Any",
+        "timeCommitment": 4,
+        "gender": "All",
+        "ethnicity": "Asian",
+        "meetingFrequency": "Bi-weekly",
+        "focus": "Student Affirmative Actions Committee (SAAC)"
+      }
+    ]
+  }
